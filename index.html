@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo: Git, Linux e Segurança Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-logo">DevGuide</h1>
+                <ul class="nav-menu">
+                    <li><a href="#repositorios" class="nav-link">Gerenciadores</a></li>
+                    <li><a href="#linux" class="nav-link">Linux</a></li>
+                    <li><a href="#git" class="nav-link">Git</a></li>
+                    <li><a href="#github-pages" class="nav-link">GitHub Pages</a></li>
+                    <li><a href="#seguranca" class="nav-link">Segurança</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Guia Completo de Desenvolvimento</h1>
+                <p>Aprenda sobre gerenciadores de repositórios, comandos Linux, Git, GitHub Pages e segurança web</p>
+                <button class="cta-button" onclick="scrollToSection('repositorios')">Começar a Aprender</button>
+            </div>
+        </section>
+
+        <!-- Gerenciadores de Repositórios -->
+        <section id="repositorios" class="section">
+            <div class="container">
+                <h2><i class="fas fa-cloud"></i> Gerenciadores de Repositórios Remotos</h2>
+                <div class="content-grid">
+                    <div class="card">
+                        <h3>O que são?</h3>
+                        <p>Gerenciadores de repositórios remotos são serviços que hospedam código fonte e facilitam o trabalho colaborativo em projetos de desenvolvimento.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Principais Plataformas</h3>
+                        <ul>
+                            <li><strong>GitHub:</strong> Maior plataforma, ampla comunidade</li>
+                            <li><strong>GitLab:</strong> Versão community e enterprise</li>
+                            <li><strong>Bitbucket:</strong> Integração com stack Atlassian</li>
+                            <li><strong>Azure DevOps:</strong> Solução Microsoft</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Vantagens</h3>
+                        <ul>
+                            <li>Backup automático do código</li>
+                            <li>Controle de versão distribuído</li>
+                            <li>Colaboração em equipe</li>
+                            <li>CI/CD integrado</li>
+                            <li>Documentação e issues</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comandos Linux -->
+        <section id="linux" class="section bg-light">
+            <div class="container">
+                <h2><i class="fas fa-terminal"></i> Comandos Linux Essenciais</h2>
+                <div class="content-grid">
+                    <div class="card">
+                        <h3>Navegação</h3>
+                        <div class="code-block">
+                            <code>ls</code> - Lista arquivos<br>
+                            <code>cd</code> - Muda diretório<br>
+                            <code>pwd</code> - Mostra diretório atual<br>
+                            <code>mkdir</code> - Cria diretório
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Arquivos</h3>
+                        <div class="code-block">
+                            <code>cp</code> - Copia arquivos<br>
+                            <code>mv</code> - Move/renomeia<br>
+                            <code>rm</code> - Remove arquivos<br>
+                            <code>cat</code> - Mostra conteúdo
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Permissões</h3>
+                        <div class="code-block">
+                            <code>chmod</code> - Modifica permissões<br>
+                            <code>chown</code> - Muda proprietário<br>
+                            <code>sudo</code> - Executa como root<br>
+                            <code>ps</code> - Mostra processos
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Git -->
+        <section id="git" class="section">
+            <div class="container">
+                <h2><i class="fab fa-git-alt"></i> Git - Controle de Versão</h2>
+                <div class="content-grid">
+                    <div class="card">
+                        <h3>Comandos Básicos</h3>
+                        <div class="code-block">
+                            <code>git init</code> - Inicia repositório<br>
+                            <code>git clone</code> - Clona repositório<br>
+                            <code>git add</code> - Adiciona arquivos<br>
+                            <code>git commit</code> - Salva alterações
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Trabalhando com Branches</h3>
+                        <div class="code-block">
+                            <code>git branch</code> - Lista branches<br>
+                            <code>git checkout</code> - Muda de branch<br>
+                            <code>git merge</code> - Une branches<br>
+                            <code>git pull</code> - Atualiza do remoto
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Fluxo de Trabalho</h3>
+                        <ol>
+                            <li>git pull origin main</li>
+                            <li>git checkout -b nova-feature</li>
+                            <li>Desenvolver e testar</li>
+                            <li>git add . && git commit</li>
+                            <li>git push origin nova-feature</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Pages -->
+        <section id="github-pages" class="section bg-light">
+            <div class="container">
+                <h2><i class="fab fa-github"></i> Criando Site no GitHub Pages</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Criar Repositório</h3>
+                            <p>Crie um novo repositório no GitHub com nome: <code>seu-usuario.github.io</code></p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Adicionar Conteúdo</h3>
+                            <p>Adicione seus arquivos HTML, CSS e JavaScript ao repositório</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Configurar Pages</h3>
+                            <p>Vá em Settings → Pages → Selecione a branch main como source</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Acessar Site</h3>
+                            <p>Seu site estará disponível em: <code>https://seu-usuario.github.io</code></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="example-code">
+                    <h3>Exemplo de Deploy:</h3>
+                    <pre><code># Clonar repositório
+git clone https://github.com/seu-usuario/seu-usuario.github.io
+
+# Entrar na pasta
+cd seu-usuario.github.io
+
+# Adicionar arquivos do site
+echo "&lt;h1&gt;Meu Site&lt;/h1&gt;" > index.html
+
+# Fazer commit e push
+git add .
+git commit -m "Primeiro deploy"
+git push origin main</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Segurança -->
+        <section id="seguranca" class="section">
+            <div class="container">
+                <h2><i class="fas fa-shield-alt"></i> HTTPS e DNS na Cibersegurança</h2>
+                <div class="content-grid">
+                    <div class="card">
+                        <h3>HTTPS - Segurança na Web</h3>
+                        <p><strong>HTTPS (HyperText Transfer Protocol Secure)</strong> é a versão segura do HTTP que utiliza criptografia SSL/TLS.</p>
+                        <ul>
+                            <li><strong>Autenticação:</strong> Verifica a identidade do servidor</li>
+                            <li><strong>Confidencialidade:</strong> Dados criptografados</li>
+                            <li><strong>Integridade:</strong> Previne alteração dos dados</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>DNS - Sistema de Nomes</h3>
+                        <p><strong>DNS (Domain Name System)</strong> traduz nomes de domínio para endereços IP.</p>
+                        <ul>
+                            <li><strong>DNS Secured (DNSSEC):</strong> Valida respostas DNS</li>
+                            <li><strong>DNS over HTTPS (DoH):</strong> Criptografa consultas</li>
+                            <li><strong>Prevenção de spoofing:</strong> Protege contra falsificação</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Importância para Segurança</h3>
+                        <ul>
+                            <li>Protege dados sensíveis</li>
+                            <li>Previne ataques man-in-the-middle</li>
+                            <li>Garante autenticidade do site</li>
+                            <li>Protege contra phishing</li>
+                            <li>Melhora SEO e confiança do usuário</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Guia Educativo de Desenvolvimento. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
